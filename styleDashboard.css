@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.mise {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+.mise h2 {
+    text-align: center;
+}
+.mise ul {
+    list-style-type: none;
+    padding: 0;
+}
+.mise ul li {
+    margin: 20px 0;
+}
+.mise ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.mise ul li a:hover {
+    background-color: #34495e;
+}
+
+.main-content {
+    margin-left: 280px;
+    padding: 20px;
+    width: 100%;
+}
+
+header {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-bottom: 1px solid #bdc3c7;
+    text-align: center;
+    width: 104%; 
+}
+
+.main-content nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content nav li {
+    margin-right: 100px;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    width: 106%; 
+}
+
+.card {
+    background-color: #ecf0f1;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 20px;
+    text-align: left;
+    width: 250px;
+    background-color: rgb(93, 110, 146);
+}
+
+.card h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.card p {
+    font-size: 24px;
+    margin: 0;
+}
+.cads {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: left;
+    
+    background-color: rgb(0, 119, 255);
+}
+
+.cads h3 {
+    margin: 0 0 10px;
+}
+
+.cads p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.sousEnsemble{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    padding: auto;
+    border: 1px solid #444;  
+}
+.sousEnsemble ul li ul li {
+    margin-bottom: 10px;
+}
+.sousEnsemble ul li ul li:last-child{
+    margin-bottom: 0;
+}
+.pied{
+    width:600px;
+    height: 250px;
+    border-radius: 70%;
+    background: conic-gradient(
+        #FF6384 0% 16.66%,
+        #36A2EB 16.66% 33.33%,
+        #FFCE56 33.33% 50%,
+        #34495e 50% 66.66%,
+        #008000 66.66% 83.33%,
+        #444 83.33% 100%
+        
+    );
+    margin-top: 400px;
+    margin-left: -400px;
+    transform: translate(-570px);
+    
+}
+.barre{
+    height: 30px;
+    background-color: antiquewhite;
+    position: relative;
+    bottom: 0%;
+}
+
+.barre:nth-child(1){
+    left: 30px;
+}
+.barre:nth-child(2){
+    left: 50px;
+}
+.barre:nth-child(3){
+    left: 80px;
+}
+
+

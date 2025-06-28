@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleTableau.css">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Liste des éléments</h2>
+    <table border="1"> <!-- Début du tableau pour afficher les éléments -->
+        <tr>
+            <th>ID</th>
+            <th>NOM</th>
+            <th>Matricule</th>
+        </tr>
+        <?php foreach ($data as $item): ?> <!-- Boucle pour afficher chaque élément -->
+        <tr>
+            <td><?= $_POST['id'] ?></td> <!-- Affiche l'ID -->
+            <td><?= $_POST['nom'] ?></td> <!-- Affiche le NOM -->
+            <td><?= $_POST['password'] ?></td> <!-- Affiche le PRENOM -->
+            <td>
+                <form method="POST" style="display:inline;"> <!-- Formulaire pour supprimer un élément -->
+                    <input type="hidden" name="id" value="<?= $item['id'] ?>"> <!-- ID caché de l'élément à supprimer -->
+                    <button type="submit" name="delete">Supprimer</button> <!-- Bouton pour supprimer l'élément -->
+                </form>
+            </td>
+        </tr>
+        <?php endforeach; ?>
+    </table>
+</body>
+</html>

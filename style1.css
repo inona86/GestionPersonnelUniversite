@@ -1,0 +1,20 @@
+*{
+    margin: 5px ;
+    padding: 5px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+form{
+    border: 1px solid rgb(14, 0, 0);
+    border-radius: 2px;
+    display: block;
+    flex-direction: column;
+    width: 310pX;
+    height: 360px;
+}    
+button{
+    margin: 65px;
+    
+}
